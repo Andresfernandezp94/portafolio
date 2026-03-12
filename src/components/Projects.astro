@@ -1,58 +1,23 @@
 ---
-interface Repo {
-    id: number;
-    name: string;
-    description: string | null;
-    html_url: string;
-    languages_url: string;
-}
-
-interface LanguagePercent {
-    language: string;
-    percent: string;
-}
-
-interface RepoWithLanguages extends Repo {
-    languages: LanguagePercent[];
-}
+import { getReposWithLanguages, getLanguageColor } from "../lib/github";
 
 const username = "Andresfernandezp94";
 
-const repos: Repo[] = await fetch(
-    `https://api.github.com/users/${username}/repos`,
-).then((res) => res.json());
-
-async function getLanguages(url: string): Promise<LanguagePercent[]> {
-    const data: Record<string, number> = await fetch(url).then((r) => r.json());
-
-    const total = Object.values(data).reduce((a, b) => a + b, 0);
-
-    return Object.entries(data).map(([lang, bytes]) => ({
-        language: lang,
-        percent: ((bytes / total) * 100).toFixed(1),
-    }));
-}
-
-const reposWithLanguages: RepoWithLanguages[] = await Promise.all(
-    repos.map(async (repo) => ({
-        ...repo,
-        languages: await getLanguages(repo.languages_url),
-    })),
-);
+const reposWithLanguages = await getReposWithLanguages(username);
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {
         reposWithLanguages.map((repo) => (
-            <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-purple-500 transition">
+            <div class=" border border-neutral-800 rounded-xl p-6 hover:border-purple-500 transition">
                 <h2 class="text-xl font-bold mb-2">{repo.name}</h2>
 
-                <p class="text-neutral-400 mb-4">{repo.description}</p>
+                <p class="mb-4">{repo.description}</p>
 
                 <div class="flex flex-wrap gap-2">
                     {repo.languages.map((lang) => (
-                        <span class="text-xs bg-neutral-800 px-2 py-1 rounded">
-                            {lang.language} {lang.percent}%
+                        <span class="text-xs  px-2 py-1 rounded">
+                            {lang.language}
                         </span>
                     ))}
                 </div>
@@ -60,7 +25,7 @@ const reposWithLanguages: RepoWithLanguages[] = await Promise.all(
                 <a
                     href={repo.html_url}
                     target="_blank"
-                    class="block mt-4 text-purple-400 hover:underline"
+                    class="block mt-4  hover:underline"
                 >
                     Ver repositorio →
                 </a>
