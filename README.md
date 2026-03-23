@@ -1,393 +1,130 @@
-# Portfolio Website Requirements
+<div align="center">
 
-**Author:** Andres Fernandez
-**Framework:** Astro
-**Purpose:** Personal portfolio to showcase engineering work, architecture design, and technical projects for freelance opportunities and professional visibility.
+# 🚀 Portafolio — Andres Fernandez
 
----
+**Data Platform Engineer | BI Solutions Architect | Cloud Data Engineering**
 
-# 1. Project Overview
+Sitio web personal para mostrar proyectos de ingeniería, arquitectura de datos y experiencia técnica.
 
-The portfolio website will serve as a professional platform to showcase software engineering projects, architecture designs, and technical expertise.
+[![Astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)](https://astro.build)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 
-The site must communicate:
-
-* Technical capability
-* Experience with scalable systems
-* Cloud architecture knowledge
-* Data engineering skills
-* High-concurrency backend systems
-
-The website should be **fast, minimal, and highly professional**.
-
-Primary goals:
-
-* Showcase engineering projects
-* Present architecture case studies
-* Enable potential clients or companies to contact me
-* Strengthen personal brand as a backend/cloud engineer
+</div>
 
 ---
 
-# 2. Technical Stack
+## 📸 Vista Previa
 
-The portfolio will be built using the following technologies.
-
-### Core Framework
-
-* Astro
-
-### Styling
-
-* TailwindCSS
-
-### Content Management
-
-* Markdown / MDX
-
-### Language
-
-* TypeScript
-
-### Deployment
-
-* Vercel
-
-### Optional Integrations
-
-* GitHub API (to show repositories)
-* Analytics (Plausible or Vercel Analytics)
+> _Próximamente screenshot del sitio desplegado_
 
 ---
 
-# 3. Design Principles
+## ✨ Características
 
-The design must follow these principles:
-
-### Minimalist
-
-Avoid visual clutter. Prioritize clarity and whitespace.
-
-### Fast
-
-Static generation with optimized assets.
-
-### Professional
-
-Design inspired by modern developer platforms such as Stripe or Vercel.
-
-### Technical credibility
-
-Content should demonstrate engineering thinking and architecture awareness.
-
-### Responsive
-
-Must work perfectly on:
-
-* Desktop
-* Tablet
-* Mobile
+- ⚡ **Ultra rápido** — Generación estática con Astro, JavaScript mínimo
+- 🎨 **Diseño profesional** — Estilo minimalista inspirado en Stripe y Vercel
+- 📱 **Responsive** — Adaptado a desktop, tablet y móvil
+- 🐙 **Integración GitHub** — Muestra repositorios públicos automáticamente
+- 📄 **Casos de estudio** — Páginas detalladas por proyecto con arquitectura y resultados
+- 🔍 **SEO optimizado** — Meta tags, Open Graph y títulos por página
+- 🎯 **Paleta personalizable** — Variables CSS en `global.css` para cambiar colores fácilmente
 
 ---
 
-# 4. Website Structure
+## 🏗️ Stack Tecnológico
 
-The website will contain the following main sections.
-
-## Homepage
-
-Sections included:
-
-1. Hero
-2. About
-3. Projects
-4. Skills
-5. Contact
+| Tecnología | Uso |
+|---|---|
+| 🧱 Astro | Framework principal |
+| 🎨 TailwindCSS v4 | Estilos |
+| 📘 TypeScript | Tipado |
+| 📝 Markdown | Contenido de proyectos |
+| ☁️ Vercel | Despliegue |
+| 🐙 GitHub API | Repos públicos |
 
 ---
 
-# 5. Hero Section
-
-Purpose: Immediately communicate who I am and what I build.
-
-### Content
-
-* Name
-* Professional title
-* Short description
-* Primary call-to-action
-
-### Example Content
-
-Name
-Andres Fernandez
-
-Title
-Full Stack & Cloud Engineer
-
-Description
-I design scalable backend systems, data platforms and high-concurrency architectures.
-
-Buttons
-
-* View Projects
-* Contact Me
-
-Optional visual element:
-
-* 3D illustrations
-* abstract engineering visuals
-
----
-
-# 6. About Section
-
-Purpose: Explain engineering focus and professional approach.
-
-### Content
-
-Short description covering:
-
-* backend engineering
-* distributed systems
-* cloud architecture
-* data platforms
-
-Example text:
-
-I am a software engineer focused on building scalable backend systems, data platforms and cloud architectures. My work typically involves AWS infrastructure, distributed systems, and high-concurrency applications such as billing engines, wallets, and analytics platforms.
-
----
-
-# 7. Projects Section
-
-This is the **most important section of the website**.
-
-Each project should be displayed as a **Project Card**.
-
-## Project Card Structure
-
-Project Name
-
-Short description
-
-Technology stack
-
-Key highlights
-
-Link to case study
-
-### Example
-
-Wallet Billing Engine
-
-High-concurrency wallet debit system built on AWS.
-
-Stack:
-
-* AWS
-* DynamoDB
-* Lambda
-
-Highlights:
-
-* Handles 1200+ concurrent workers
-* Atomic debit architecture
-* Ledger-based consistency
-
-Link
-
-View Case Study
-
----
-
-# 8. Case Studies
-
-Each major project should have its own page.
-
-Case studies demonstrate engineering thinking and architecture design.
-
-## Case Study Structure
-
-### Problem
-
-Description of the problem the system solves.
-
-### Architecture
-
-High-level architecture explanation.
-
-### Challenges
-
-Technical challenges faced.
-
-Examples:
-
-* concurrency
-* data consistency
-* scalability
-
-### Solution
-
-Explanation of the implemented solution.
-
-### Results
-
-Results or performance outcomes.
-
-Examples:
-
-* system scalability
-* concurrency handling
-* cost efficiency
-
----
-
-# 9. Skills Section
-
-Display technical skills grouped by category.
-
-## Backend
-
-* Node.js
-* Python
-* Go
-
-## Cloud
-
-* AWS
-* DynamoDB
-* Lambda
-* S3
-* CloudFormation
-
-## Data Engineering
-
-* ETL pipelines
-* Parquet
-* Athena
-* Data lakes
-
-## Architecture
-
-* Distributed systems
-* High-concurrency systems
-* Event-driven systems
-
----
-
-# 10. Contact Section
-
-Simple section allowing visitors to reach out.
-
-### Contact methods
-
-* Email
-* GitHub
-* LinkedIn
-
-Optional addition:
-
-Short message encouraging collaboration.
-
-Example:
-
-Interested in working together or discussing an engineering project? Feel free to reach out.
-
----
-
-# 11. Project Folder Structure
-
-Recommended Astro project structure.
+## 📂 Estructura del Proyecto
 
 ```
 src/
-  components/
-    Hero.astro
-    Navbar.astro
-    ProjectCard.astro
-    Skills.astro
-    Footer.astro
-
-  layouts/
-    MainLayout.astro
-
-  pages/
-    index.astro
-    projects.astro
-    about.astro
-    contact.astro
-
-  content/
-    projects/
-      wallet.md
-      ai-analysis.md
-      data-lake.md
+├── components/
+│   ├── About.astro          # 👤 Sección sobre mí
+│   ├── Contact.astro        # 📬 Sección de contacto
+│   ├── Footer.astro         # 🦶 Pie de página
+│   ├── Hero.astro           # 🦸 Sección principal
+│   ├── Navbar.astro         # 🧭 Navegación
+│   ├── ProjectCard.astro    # 🃏 Tarjeta de proyecto
+│   ├── Projects.astro       # 📦 Sección de proyectos
+│   └── Skills.astro         # 🛠️ Sección de habilidades
+├── content/
+│   └── projects/
+│       └── wallet.md        # 💰 Caso de estudio
+├── layouts/
+│   └── MainLayout.astro     # 📐 Layout principal
+├── lib/
+│   └── github.ts            # 🐙 Integración GitHub API
+├── pages/
+│   ├── index.astro          # 🏠 Página principal
+│   └── projects/
+│       └── [slug].astro     # 📖 Página dinámica de caso de estudio
+└── styles/
+    └── global.css           # 🎨 Variables de color y estilos globales
 ```
 
-Projects should be stored as Markdown files.
+---
+
+## 🚀 Inicio Rápido
+
+```bash
+# 📥 Clonar el repositorio
+git clone https://github.com/Andresfernandezp94/portafolio.git
+cd portafolio
+
+# 📦 Instalar dependencias
+pnpm install
+
+# 🔥 Iniciar servidor de desarrollo
+pnpm dev
+
+# 🏗️ Construir para producción
+pnpm build
+
+# 👀 Previsualizar el build
+pnpm preview
+```
 
 ---
 
-# 12. Performance Requirements
+## 🎨 Personalización de Colores
 
-The site must prioritize performance.
+Todos los colores están definidos como variables CSS en `src/styles/global.css`:
 
-Requirements:
+```css
+:root {
+  --color-bg: #0a0a0a;
+  --color-accent: #7c3aed;
+  --color-text: #fafafa;
+  /* ... más variables */
+}
+```
 
-* Static generation
-* Optimized images
-* Lazy loading
-* Minimal JavaScript
-* Lighthouse score above 90
-
----
-
-# 13. SEO Requirements
-
-Basic SEO setup should include:
-
-* Page titles
-* Meta descriptions
-* Open Graph tags
-* Sitemap
-* Structured content for projects
+Cambia los valores y todo el sitio se actualiza automáticamente. 🪄
 
 ---
 
-# 14. Optional Future Features
+## 📬 Contacto
 
-These features are optional but recommended.
-
-## Technical Blog
-
-Articles about:
-
-* DynamoDB concurrency
-* billing systems
-* distributed systems
-* AWS architecture
-
-## Architecture Diagrams
-
-Include diagrams explaining system architecture.
-
-## GitHub Integration
-
-Automatically display latest repositories.
-
-## Dark Mode
-
-Optional UI toggle.
+- 📧 [andresfernandezp94@gmail.com](mailto:andresfernandezp94@gmail.com)
+- 🐙 [GitHub](https://github.com/Andresfernandezp94)
+- 💼 [LinkedIn](https://www.linkedin.com/in/andresfernandezp94)
 
 ---
 
-# 15. Success Criteria
+<div align="center">
 
-The portfolio will be successful if it:
+Hecho con ❤️ y ☕ por **Andres Fernandez**
 
-* Clearly communicates engineering expertise
-* Showcases real technical projects
-* Loads extremely fast
-* Is easy to navigate
-* Helps attract freelance clients or job opportunities
+</div>
