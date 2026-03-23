@@ -17,7 +17,7 @@ Sitio web personal para mostrar proyectos de ingeniería, arquitectura de datos 
 
 ## 📸 Vista Previa
 
-> _Próximamente screenshot del sitio desplegado_
+![alt text](image.png)
 
 ---
 
